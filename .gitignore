@@ -1,3 +1,13 @@
+#############
+System
+#############
+
+.DS_Store
+
+#############
+node
+#############
+
 lib-cov
 *.seed
 *.log
@@ -13,3 +23,9 @@ results
 
 npm-debug.log
 node_modules
+
+#############
+app
+#############
+
+app/tmp
