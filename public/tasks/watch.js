@@ -8,11 +8,11 @@ module.exports = {
     }
   },
   statics: {
-    files: ['*.html'],
+    files: ['public/*.html'],
     tasks: []
   },
   scripts: {
-    files: ['js/**/*.js'],
+    files: ['public/js/**/*.js'],
     tasks: ['build']
   }
 };

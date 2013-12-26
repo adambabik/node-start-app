@@ -1,3 +1,3 @@
 module.exports = {
-  all: ['dist']
+  all: ['public/dist']
 };

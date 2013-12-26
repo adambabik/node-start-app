@@ -1,3 +1,3 @@
 module.exports = {
-  all: ['js/**/*.js']
+  all: ['public/js/**/*.js']
 };

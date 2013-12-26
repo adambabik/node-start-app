@@ -5,8 +5,10 @@
 var path = require('path');
 
 module.exports = function(grunt) {
+  grunt.file.setBase('..');
+
   var config = require('load-grunt-config')(grunt, {
-    configPath: path.join(process.cwd(), 'tasks'),
+    configPath: path.join(__dirname, 'tasks'),
     init: true,
     config: {
       env: process.env,
@@ -21,7 +23,7 @@ module.exports = function(grunt) {
     ['clean', 'browserify']
   );
 
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['watch']);
 
   grunt.initConfig(config);
 };
