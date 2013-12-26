@@ -1,0 +1,17 @@
+{
+  "dev": {
+    "host": "localhost",
+    "port": "3000",
+    "cookieSecret": "very-secret-cookie"
+  },
+  "test": {
+    "host": "localhost",
+    "port": "3001",
+    "cookieSecret": "very-secret-cookie-test"
+  },
+  "prod": {
+    "host": "localhost",
+    "port": "3002",
+    "cookieSecret": "very-secret-cookie-prod"
+  }
+}
