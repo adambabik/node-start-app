@@ -1,17 +1,19 @@
 {
-  "name": "node-app",
+  "name": "node-start-app",
   "version": "0.1.0",
-  "description": "node.js application started kit.",
+  "description": "Node.js starter kit. Powered by express framework, contains configured grunt tasks.",
   "main": "app/index.js",
   "scripts": {
+    "test": "NODE_ENV=test mocha --recursive --reporter spec --timeout 2000 app/test",
     "start": "NODE_ENV=development nodemon -w app ./app/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debugger": "node-inspector"
   },
   "dependencies": {
     "lodash": "~2.4.1",
     "express": "~3.4.7",
     "q": "~0.9.7",
-    "winston": "~0.7.2"
+    "winston": "~0.7.2",
+    "ejs": "~0.8.5"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -30,12 +32,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dreame4/node-app.git"
+    "url": "git://github.com/dreame4/node-start-app.git"
   },
   "author": "Adam Babik",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dreame4/node-app/issues"
+    "url": "https://github.com/dreame4/node-start-app/issues"
   },
-  "homepage": "https://github.com/dreame4/node-app"
+  "homepage": "https://github.com/dreame4/node-start-app"
 }
